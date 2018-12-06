@@ -16,9 +16,43 @@ feed for the same analysis.
 - Amazon Kinesis
  
 ### Architecture Diagram
-![alt Architecture](https://github.com/nish18071985/CS-410/blob/master/sentiment-analysis/twitter-dashboard-sentimentAnalysis.gif)
+![alt Architecture](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/twitter-dashboard-sentimentAnalysis.gif)
 
 
 ### Building the architecture
+
 The project contains a deploy.yaml (AWS Cloudformation template) which will create most of the architecture
-shared in the previous 
+shared in the architecture diagram.
+
+#### Pre-requisite
+- Create your own AWS account
+- Create your own developer account in twitter to access the twitter apis [twitter account creation](https://apps.twitter.com/)
+
+
+
+
+1. **Creating the services :** 
+    - Create a key pair (you can go to EC2 service and then on the left hand panel should be a link to create a key pair).
+    - In the AWS management console, [launch the cloudformation template](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new).Go to "Choose a Template" and select "Upload a template to S3 option" and upload the deploy.yaml file there.
+    - In the next step of the Cloudformation stack creation you need to specify the following parameter values :
+    
+    | Parameter | Description  |
+    | ------- | --- |
+    | InstanceKeyName | KeyPair created in the previous step |
+    | TwitterAuthAccessToken | Twitter Account Access token|
+    | TwitterAuthAccessTokenSecret | Twitter Account Access token secret|
+    | TwitterConsumerKey | Twitter Account consumer key (API key) |
+    | TwitterConsumerKeySecret | Twitter Account consumer secret (API secret)|| 
+    
+    - We have implemented our twitter search based on "Donald trump" but it can be implemented on any entity.
+    In order to change the entity or language of search please change the following values:
+    
+    | Parameter | Description  |
+    | ------- | --- |
+    | TwitterLanguages | List of languages to use for the twitter streaming reader |
+    | TwitterTermList | List of terms for twitter to listen to|
+    
+    - After the CloudFormation stack is launched please wait until its complete.
+    
+2.
+
