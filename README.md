@@ -33,7 +33,7 @@ shared in the architecture diagram.
 
 1. **Creating the services :** 
     - Create a key pair (you can go to EC2 service and then on the left hand panel should be a link to create a key pair).
-    - In the AWS management console, [launch the cloudformation template](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new).Go to "Choose a Template" and select "Upload a template to S3 option" and upload the deploy.yaml file there.
+    - In the AWS management console, [launch the cloudformation template](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new). Go to "Choose a Template" and select "Upload a template to S3 option" and upload the deploy.yaml file there.
     - In the next step of the Cloudformation stack creation you need to specify the following parameter values :
     
     | Parameter | Description  |
@@ -54,5 +54,5 @@ shared in the architecture diagram.
     
     - After the CloudFormation stack is launched please wait until its complete.
     
-2.
+2. 
 
