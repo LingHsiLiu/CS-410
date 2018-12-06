@@ -65,3 +65,5 @@ shared in the architecture diagram.
 3. **Starting the tweeter stream producer :**
     - SSH into the EC2 instance that the stack created. (Please refer to the cloudformation stack output to get the SSh command and replace it wth your kep pair).
     - Once inside the instance please run the command `node twitter_stream_producer_app.js`    
+    - After sometime, you should be able to see the various datasets in the S3 bucket that the CloudFormation template created:
+    ![alt S3NotificationSetUp](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/s3bucketdatasets.gif)
