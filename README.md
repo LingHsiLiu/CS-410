@@ -24,7 +24,7 @@ feed for the same analysis.
 The project contains a deploy.yaml (AWS Cloudformation template) which will create most of the architecture
 shared in the architecture diagram.
 
-#### Pre-requisite
+#### Pre-requisite :
 - Create your own AWS account
 - Create your own developer account in twitter to access the twitter apis [twitter account creation](https://apps.twitter.com/)
 
@@ -61,4 +61,7 @@ shared in the architecture diagram.
         1. Under Add Triggers, please select the S3 trigger.
         2. Then configure the trigger with the new S3 bucket that CloudFormation created with the ‘raw/’ prefix. The event type should be Object Created (All).
         ![alt S3NotificationSetUp](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/s3BucketConfigLambda.gif)
-    
+
+3. **Starting the tweeter stream producer :**
+    - SSH into the EC2 instance that the stack created. (Please refer to the cloudformation stack output to get the SSh command and replace it wth your kep pair).
+    - Once inside the instance please run the command `node twitter_stream_producer_app.js`    
