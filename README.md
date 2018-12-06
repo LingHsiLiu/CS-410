@@ -56,9 +56,9 @@ shared in the architecture diagram.
     
 2. **Setting up S3 trigger for the lambda :**
     - After the CloudFormation stack launch is completed, go to the outputs tab. Click the LambdaFunctionConsoleURL link to go to the lambda function directly.
-    ![alt CloudformationOutput](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/twitter-dashboard-sentimentAnalysis.gif)
+    ![alt CloudformationOutput](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/stackoutput.gif)
     - We will now add S3 notification so that the Lambda function will be invoked when new tweets are written to S3:
         1. Under Add Triggers, please select the S3 trigger.
         2. Then configure the trigger with the new S3 bucket that CloudFormation created with the ‘raw/’ prefix. The event type should be Object Created (All).
-        ![alt S3NotificationSetUp](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/twitter-dashboard-sentimentAnalysis.gif)
+        ![alt S3NotificationSetUp](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/s3BucketConfigLambda.gif)
     
