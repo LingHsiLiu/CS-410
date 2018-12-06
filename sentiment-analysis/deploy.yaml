@@ -8,11 +8,11 @@ Parameters:
   TwitterTermList:
     Description: List of terms for twitter to listen to
     Type: String
-    Default: "'AWS', 'VPC', 'EC2', 'RDS', 'S3'"
+    Default: "'trump', 'donaldtrump', 'realdonaldtrump'"
   TwitterLanguages:
     Description: List of languages to use for the twitter streaming reader
     Type: String
-    Default: "'en', 'es', 'de', 'fr', 'ar', 'pt'"
+    Default: "'en', 'es'"
   TwitterAuthConsumerKey:
     Description: Consumer key for access twitter
     Type: String
