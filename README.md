@@ -77,3 +77,20 @@ shared in the architecture diagram.
     - Queries will create 3 tables -
 
     ![alt S3NotificationSetUp](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/athena_tables.png)
+
+
+4. **Create Dashboards :**
+    - Select QuickSight from AWS console.
+    - Choose Manage data
+    - Choose Manage data
+    - Create a new Athena Data Source
+    - Select the `socialanalyticsblog` database and the `tweet_sentiments` table
+    - Choose Edit/Preview Data
+    - Choose Switch to custom SQL tool
+    - Add queries from <a href="https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/quicksight/quicksight.sql/">here</a> 
+    - Click on finish and saves the query
+    - Choose Save and Visualize
+    - Add the dashboards as per requirement.
+
+4. **Video Tutorial :**
+    - Video tutorial is available <a href="https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/tutorial_video/cs_410_final_recording.mov/">here</a> 
