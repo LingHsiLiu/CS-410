@@ -16,7 +16,7 @@ feed for the same analysis.
 - Amazon Kinesis
  
 ### Architecture Diagram
-![alt Architecture](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/twitter-dashboard-sentimentAnalysis.gif)
+![alt Architecture](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/Architecture_diagram.png)
 
 
 ### Building the architecture
