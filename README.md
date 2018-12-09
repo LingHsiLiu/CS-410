@@ -73,7 +73,7 @@ shared in the architecture diagram.
 4. **Create Athena tables :**
     - Select Athena service from AWS console.
     - Create socialanalyticsblog table`    
-    - Run queries from https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/athena/athena.sql: . In queries replace `TwitterRawLocation`, `TwitterEntitiesLocation`, `TwitterSentimentLocation` from cloud formation template output.
+    - Run queries from https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/athena/athena.sql . In queries replace `TwitterRawLocation`, `TwitterEntitiesLocation`, `TwitterSentimentLocation` from cloud formation template output.
     - Queries will create 3 tables -
-    
-    (https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/athena_tables.png)
+
+    ![alt S3NotificationSetUp](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/athena_tables.png)
