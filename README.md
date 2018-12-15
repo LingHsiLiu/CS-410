@@ -9,11 +9,11 @@ feed for the same analysis.
 
 ### Amazon Services Used for implementing the solution
 
-- Amazon Comprehend (NLP)
-- Athena (database)
-- Lambda functions
-- Amazon QuickSight (DashBoard)
-- Amazon Kinesis
+- Amazon Comprehend (NLP) - Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text. Amazon Comprehend is fully managed, so there are no servers to provision, and no machine learning models to build, train, or deploy.
+- Athena (database) - Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon Simple Storage Service (Amazon S3) using standard SQL.
+- Lambda functions - AWS Lambda is a compute service that lets you run code without provisioning or managing servers. AWS Lambda executes your code only when needed and scales automatically, from a few requests per day to thousands per second. 
+- Amazon QuickSight (DashBoard) - QuickSight lets you create and publish interactive dashboards that can be accessed from browsers or mobile devices.
+- Amazon Kinesis - Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information.
  
 ### Architecture Diagram
 ![alt Architecture](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/Architecture_diagram.png)
@@ -94,8 +94,14 @@ shared in the architecture diagram.
 6. **Video Tutorial :**
     - Video tutorial is available <a href="https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/tutorial_video/cs_410_final_recording.mov/">here</a> 
 
+7. **Usability :**
+    - We have done a sentiment analysis on "Donald Trump" using tweets made all over the world on the American President to find out the the popularity of the president over the world.
+    This data will help a common american to have a general feel on the performance of the president and this might also be helpful for media reporting agencies to draw further conclusions on this.
+    - The most important aspect of this architecture is that it can be easily extended to any other entity or even change the data source from twitter api to something else. In addition to this being easily extendable it also cost effective and scalable as its being built using different AWS services.
+    
+    
 
-7. **Team Contribution :**
+8. **Team Contribution :**
     - pk5, nishant9, lhliu2 - Going through various services and understanding the overall architecture.
     - pk5, nishant9 - Creating the cloud formation template script which creates the different resources.
     - pk5, nishant9, lhliu2 - Integrating Amazon Comprehend with the Twitter api.
