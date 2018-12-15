@@ -66,7 +66,7 @@ shared in the architecture diagram.
     - SSH into the EC2 instance that the stack created. (Please refer to the cloudformation stack output to get the SSh command and replace it wth your kep pair).
     - Once inside the instance please run the command `node twitter_stream_producer_app.js`    
     - After sometime, you should be able to see the various datasets in the S3 bucket that the CloudFormation template created:
-    
+   
     ![alt S3NotificationSetUp](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/s3bucketdatasets.gif)
 
 
@@ -79,7 +79,7 @@ shared in the architecture diagram.
     ![alt S3NotificationSetUp](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/athena_tables.png)
 
 
-4. **Create Dashboards :**
+5. **Create Dashboards :**
     - Select QuickSight from AWS console.
     - Choose Manage data
     - Create a new Athena Data Source
@@ -91,5 +91,15 @@ shared in the architecture diagram.
     - Choose Save and Visualize
     - Add the dashboards as per requirement.
 
-4. **Video Tutorial :**
+6. **Video Tutorial :**
     - Video tutorial is available <a href="https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/tutorial_video/cs_410_final_recording.mov/">here</a> 
+
+
+7. **Team Contribution :**
+    - pk5, nishant9, lhliu2 - Going through various services and understanding the overall architecture.
+    - pk5, nishant9 - Creating the cloud formation template script which creates the different resources.
+    - pk5, nishant9, lhliu2 - Integrating Amazon Comprehend with the Twitter api.
+    - lhliu2 - Creating the lambda function and setting up the S3 trigger on it.
+    - pk5 - Setting up the database and building the queries for athena data load.
+    - lhliu2 - Building the query to present the data for the dashboard in the Amazon quicksight dataset.
+    - nishant9 - Building the final visual dashboards.
