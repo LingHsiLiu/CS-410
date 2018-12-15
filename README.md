@@ -82,7 +82,6 @@ shared in the architecture diagram.
 4. **Create Dashboards :**
     - Select QuickSight from AWS console.
     - Choose Manage data
-    - Choose Manage data
     - Create a new Athena Data Source
     - Select the `socialanalyticsblog` database and the `tweet_sentiments` table
     - Choose Edit/Preview Data
