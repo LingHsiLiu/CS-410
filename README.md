@@ -9,11 +9,11 @@ feed for the same analysis.
 
 ### Amazon Services Used for implementing the solution
 
-- Amazon Comprehend (NLP) - Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text. Amazon Comprehend is fully managed, so there are no servers to provision, and no machine learning models to build, train, or deploy.
-- Athena (database) - Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon Simple Storage Service (Amazon S3) using standard SQL.
-- Lambda functions - AWS Lambda is a compute service that lets you run code without provisioning or managing servers. AWS Lambda executes your code only when needed and scales automatically, from a few requests per day to thousands per second. 
-- Amazon QuickSight (DashBoard) - QuickSight lets you create and publish interactive dashboards that can be accessed from browsers or mobile devices.
-- Amazon Kinesis - Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information.
+- *Amazon Comprehend (NLP)* - Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text. Amazon Comprehend is fully managed, so there are no servers to provision, and no machine learning models to build, train, or deploy.
+- *Athena (database)* - Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon Simple Storage Service (Amazon S3) using standard SQL.
+- *Lambda functions* - AWS Lambda is a compute service that lets you run code without provisioning or managing servers. AWS Lambda executes your code only when needed and scales automatically, from a few requests per day to thousands per second. 
+- *Amazon QuickSight (DashBoard)* - QuickSight lets you create and publish interactive dashboards that can be accessed from browsers or mobile devices.
+- *Amazon Kinesis* - Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information.
  
 ### Architecture Diagram
 ![alt Architecture](https://github.com/pradeepk85/CS-410/blob/master/sentiment-analysis/SocialAnalyticsReader/images/Architecture_diagram.png)
